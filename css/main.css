@@ -1,0 +1,253 @@
+/* Configuracion basica */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+
+ul { 
+    list-style-type: none;
+}
+
+a { 
+    text-decoration: none;
+}
+
+/*Contenedor padre*/
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+/*Cabecero de pagina*/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/server.jpg"); /* fallback */
+    background-image: linear-gradient(180.26deg, rgba(4, 209, 255, 0.8), rgba(0, 255, 56, .8) 137.47%), url("../images/server.jpg");
+    background-size: cover;
+    margin-bottom: 2rem;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+    
+}
+
+/* Logo */
+header img{
+    max-width: 250px;
+}
+
+/* GRIP IT */
+h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: -4px 3px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 1rem;
+}
+
+/* Contenido principal */
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Secciones */
+section {
+    min-height: 80vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: #353535
+}
+
+/* Contenido dentro de tarjetas */
+.sectionContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    padding: 4rem 0;
+}
+
+h2, h3 {
+    font-size: 1.8em;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #303030;
+}
+
+.sectionContent p {
+    text-align: justify;
+    line-height: 1.25em;
+    color: #303030;
+}
+
+.sectionContent > img {
+    margin-top: 2rem;
+    max-width: 200px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+section span {
+    text-align: center;
+    line-height: 1.25em;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios > li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.servicios > li > img {
+    margin: 1rem 0;
+    max-width: 150px;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+input {
+    appearance: none;
+    outline: none;
+    font-weight: lighter;
+    color: #505050;
+    width: 70vw;
+    min-width: 200px;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 7px;
+  }
+
+textarea {
+    appearance: none;
+    outline: none;
+    font-weight: lighter;
+    color: #505050;
+    min-width: 200px;
+    width: 70vw;
+    padding: .5rem;
+    height: 10rem;
+    margin-bottom: 2rem;
+    resize: none;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 7px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.boton {
+    color: white;
+    font-weight: 500;
+    border: 0px solid rgba(0, 0, 0, 0);
+    background: linear-gradient(99.03deg, #04D2FF 4.02%, #27FF7D 134.35%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    min-width: 200px;
+    transition-duration: 500ms;
+}
+
+.boton:hover {
+    transform: scale(1.05);
+}
+
+/* Pie de pagina */
+footer {
+    background: linear-gradient(165.46deg, #03D2FF 6.43%, #00FF38 146.19%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50vh;
+    width: 100%;
+}
+
+/* Mapa de pagina */
+nav {
+    width: 40%;
+    padding: 0 4rem;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    font-weight: 200;
+    font-size: .9rem;
+    transition-duration: 600ms;
+}
+
+nav li {
+    margin-bottom: .6rem;
+    transition-duration: 600ms;
+}
+
+/* Redes sociales */
+footer > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 0 2rem;
+}
+
+
+@media screen and (min-width: 1024px) {
+    *{
+        font-size: 24px;
+    }
+
+    .servicios {
+        width: 100%;
+    }
+
+    .servicios li{
+        width: 90%;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .servicios span {
+        text-align: justify;
+        padding: 0 2rem;
+    }
+}
