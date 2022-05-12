@@ -137,6 +137,31 @@ section span {
     max-width: 150px;
 }
 
+/* Contacto */
+#infoContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.lineaContacto {
+    margin: 1rem 2rem;
+}
+
+.lineaContacto img {
+    width: 1rem;
+}
+
+#emailContacto {
+    margin: 2rem 0;
+}
+
+.textoMail {
+    color: #03D2FF;
+}
+
 /* Formulario */
 form {
     display: flex;
@@ -163,8 +188,6 @@ input {
 input:active, :focus, ::selection {
     border: 3px solid #03D2FF;
 }
-
-
 
 textarea {
     appearance: none;
