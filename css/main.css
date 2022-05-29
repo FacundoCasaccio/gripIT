@@ -140,10 +140,9 @@ section span {
 /* Contacto */
 #infoContacto {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
 }
 
 .lineaContacto {
@@ -156,10 +155,13 @@ section span {
 
 #emailContacto {
     margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .textoMail {
     color: #03D2FF;
+    margin: .5rem;
 }
 
 /* Formulario */
@@ -290,5 +292,28 @@ footer > ul {
     .servicios span {
         text-align: justify;
         padding: 0 2rem;
+    }
+
+    #infoContacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .lineaContacto {
+        margin: 1rem 2rem;
+    }
+    
+    .lineaContacto img {
+        width: 1rem;
+    }
+    
+    #emailContacto {
+        margin: 2rem 0;
+    }
+    
+    .textoMail {
+        color: #03D2FF;
     }
 }
